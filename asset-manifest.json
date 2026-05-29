@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/DevPortfolio/static/css/main.5f361e03.chunk.css",
-    "main.js": "/DevPortfolio/static/js/main.505f38a9.chunk.js",
-    "main.js.map": "/DevPortfolio/static/js/main.505f38a9.chunk.js.map",
-    "runtime-main.js": "/DevPortfolio/static/js/runtime-main.a2efefaf.js",
-    "runtime-main.js.map": "/DevPortfolio/static/js/runtime-main.a2efefaf.js.map",
-    "static/js/2.54e16f8a.chunk.js": "/DevPortfolio/static/js/2.54e16f8a.chunk.js",
-    "static/js/2.54e16f8a.chunk.js.map": "/DevPortfolio/static/js/2.54e16f8a.chunk.js.map",
-    "index.html": "/DevPortfolio/index.html",
-    "precache-manifest.e8910af3e46845fdfe2904ea0c77da0c.js": "/DevPortfolio/precache-manifest.e8910af3e46845fdfe2904ea0c77da0c.js",
-    "service-worker.js": "/DevPortfolio/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/DevPortfolio/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.54e16f8a.chunk.js.LICENSE.txt": "/DevPortfolio/static/js/2.54e16f8a.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/DevPortfolio/static/media/logo.5d5d9eef.svg"
+    "main.css": "./static/css/main.ec9842a8.chunk.css",
+    "main.js": "./static/js/main.18381177.chunk.js",
+    "main.js.map": "./static/js/main.18381177.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.0fdaa1ec.js",
+    "runtime-main.js.map": "./static/js/runtime-main.0fdaa1ec.js.map",
+    "static/js/2.35fd2187.chunk.js": "./static/js/2.35fd2187.chunk.js",
+    "static/js/2.35fd2187.chunk.js.map": "./static/js/2.35fd2187.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.84806d386986ca8707d5e00aae42597c.js": "./precache-manifest.84806d386986ca8707d5e00aae42597c.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.ec9842a8.chunk.css.map": "./static/css/main.ec9842a8.chunk.css.map",
+    "static/js/2.35fd2187.chunk.js.LICENSE.txt": "./static/js/2.35fd2187.chunk.js.LICENSE.txt",
+    "static/media/crystalgame.png": "./static/media/crystalgame.ae579987.png",
+    "static/media/deadline.png": "./static/media/deadline.514f7914.png",
+    "static/media/fridgetotable.png": "./static/media/fridgetotable.fb74cc86.png",
+    "static/media/primaverataxx.png": "./static/media/primaverataxx.1ae96b7f.png",
+    "static/media/resume.pdf": "./static/media/resume.05134713.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.a2efefaf.js",
-    "static/js/2.54e16f8a.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.505f38a9.chunk.js"
+    "static/js/runtime-main.0fdaa1ec.js",
+    "static/js/2.35fd2187.chunk.js",
+    "static/css/main.ec9842a8.chunk.css",
+    "static/js/main.18381177.chunk.js"
   ]
 }
