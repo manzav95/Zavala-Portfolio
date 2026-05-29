@@ -15,60 +15,70 @@ import {
 
 import './style.css';
 
+const skillGroups = [
+  {
+    title: 'Front end',
+    summary: 'Accessible, responsive interfaces with reusable React components.',
+    skills: [
+      { label: 'HTML5', icon: faHtml5, id: 'html' },
+      { label: 'CSS3', icon: faCss3Alt, id: 'css' },
+      { label: 'JavaScript', icon: faJsSquare, id: 'javascript' },
+      { label: 'React', icon: faReact, id: 'react' },
+    ],
+  },
+  {
+    title: 'Back end',
+    summary: 'Practical APIs, server-side logic, and data-backed features.',
+    skills: [
+      { label: 'Node.js', icon: faNodeJs, id: 'api' },
+      { label: 'Python', icon: faPython, id: 'python' },
+      { label: 'Firebase', icon: faServer, id: 'firebase' },
+      { label: 'MySQL', icon: faDatabase, id: 'mysql' },
+      { label: 'MongoDB', icon: faDatabase, id: 'mongodb' },
+    ],
+  },
+  {
+    title: 'Workflow',
+    summary: 'Version control, package management, and deployment-ready builds.',
+    skills: [
+      { label: 'Git', icon: faGit, id: 'git' },
+      { label: 'GitHub', icon: faGithub, id: 'github-skill' },
+      { label: 'npm', icon: faNpm, id: 'npm' },
+    ],
+  },
+];
+
 function Skills() {
   return (
-    <div>
-      <div className='skills-wrapper'>
-        <header>
-          <h2>Skills && Experience</h2>
+    <section className='skills-wrapper' id='skills'>
+      <div className='skills-inner'>
+        <header className='skills-header'>
+          <div className='section-kicker'>Capabilities</div>
+          <h2>Modern web development from idea to shipped product.</h2>
+          <p>
+            A focused toolkit for building landing pages, dashboards, business
+            tools, and full-stack products that are easy to maintain.
+          </p>
         </header>
-        <section className='skill-list'>
-          <ul>
-            <li>
-              HTML <FontAwesomeIcon id='html' icon={faHtml5} size='2x' />
-            </li>
-            <li>
-              CSS <FontAwesomeIcon id='css' icon={faCss3Alt} size='2x' />
-            </li>
-            <li>
-              Javascript
-              <FontAwesomeIcon id='javascript' icon={faJsSquare} size='2x' />
-            </li>
-            <li>
-              React <FontAwesomeIcon id='react' icon={faReact} size='2x' />
-            </li>
-            <li>
-              Python <FontAwesomeIcon id='python' icon={faPython} size='2x' />
-            </li>
-            <li>
-              Firebase
-              <FontAwesomeIcon id='firebase' icon={faServer} size='2x' />
-            </li>
-            <li>
-              Github Pages
-              <FontAwesomeIcon id='github' icon={faGithub} size='2x' />
-            </li>
 
-            <li>
-              Git <FontAwesomeIcon id='git' icon={faGit} size='2x' />
-            </li>
-            <li>
-              npm <FontAwesomeIcon id='npm' icon={faNpm} size='2x' />
-            </li>
-            <li>
-              NodeJS <FontAwesomeIcon id='api' icon={faNodeJs} size='2x' />
-            </li>
-            <li>
-              MySQL <FontAwesomeIcon id='mysql' icon={faDatabase} size='2x' />
-            </li>
-            <li>
-              MongoDB
-              <FontAwesomeIcon id='mongodb' icon={faDatabase} size='2x' />
-            </li>
-          </ul>
-        </section>
+        <div className='skill-groups'>
+          {skillGroups.map((group) => (
+            <article className='skill-group' key={group.title}>
+              <h3>{group.title}</h3>
+              <p>{group.summary}</p>
+              <ul>
+                {group.skills.map((skill) => (
+                  <li key={skill.label}>
+                    <FontAwesomeIcon id={skill.id} icon={skill.icon} size='2x' />
+                    <span>{skill.label}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 

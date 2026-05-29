@@ -1,8 +1,14 @@
+.background-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
 .tsparticles-canvas-el {
   display: none;
   position: absolute;
-  height: 120vh;
-  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); */
+  height: 100vh;
 }
 
 @media only screen and (min-width: 768px) {

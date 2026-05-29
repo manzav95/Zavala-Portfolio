@@ -1,0 +1,101 @@
+.contact-main {
+  padding: 7rem 1.25rem;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(53, 167, 255, 0.16), transparent 24rem),
+    #030711;
+  color: var(--text);
+}
+
+.contact-inner {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.contact-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+  padding: clamp(1.5rem, 5vw, 3rem);
+  border: 1px solid var(--line);
+  border-radius: 34px;
+  background:
+    linear-gradient(135deg, rgba(100, 255, 218, 0.12), rgba(53, 167, 255, 0.08)),
+    var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.contact-card h2 {
+  max-width: 680px;
+  font-size: clamp(2.4rem, 7vw, 5.5rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.07em;
+}
+
+.contact-card p {
+  max-width: 620px;
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.contact-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0.9rem 1.3rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--cyan), var(--blue));
+  color: #04101f;
+  font-weight: 900;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform 0.25s ease;
+}
+
+.contact-primary:hover {
+  transform: translateY(-3px);
+}
+
+.contact-socials {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.contact-socials a {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-size: 1.2rem;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.contact-socials a:hover {
+  border-color: rgba(100, 255, 218, 0.65);
+  transform: translateY(-3px);
+}
+
+@media only screen and (max-width: 820px) {
+  .contact-main {
+    padding: 5rem 1rem;
+  }
+
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+}
