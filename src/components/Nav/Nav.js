@@ -8,6 +8,9 @@ import './style.css';
 function Nav() {
   return (
     <nav className='nav-wrapper'>
+      <a className='nav-brand' href='/#home' aria-label='Manuel Zavala home'>
+        MZ
+      </a>
       <ul>
         <li>
           <Link
@@ -36,10 +39,22 @@ function Nav() {
         <li>
           <Link
             activeClass='active'
+            to='skills'
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+          >
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link
+            activeClass='active'
             to='projects'
             spy={true}
             smooth={true}
-            offset={-350}
+            offset={-80}
             duration={500}
           >
             Projects
@@ -51,7 +66,7 @@ function Nav() {
             to='contact'
             spy={true}
             smooth={true}
-            offset={-700}
+            offset={-80}
             duration={500}
           >
             Contact

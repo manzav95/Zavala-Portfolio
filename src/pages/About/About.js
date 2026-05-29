@@ -3,32 +3,48 @@ import './style.css';
 
 function About() {
   return (
-    <div className='about' id='about'>
+    <section className='about' id='about'>
       <div className='about-wrapper'>
-        <h2 className='about-header'>About Me</h2>
-        <div className='about-me'>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
-            repellat vero id obcaecati quia dignissimos fugit sed reiciendis
-            quo? Quae assumenda perferendis, sint quisquam animi nulla possimus.
-            Debitis eveniet beatae nobis iure, commodi quasi odio excepturi
-            maxime consequuntur laudantium tenetur est libero dolor provident
-            possimus pariatur. Eveniet, possimus! Voluptatem accusantium omnis
-            voluptas autem architecto, ad nisi doloremque ea accusamus aliquam!
-          </p>
-          <br />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
-            repellat vero id obcaecati quia dignissimos fugit sed reiciendis
-            quo? Quae assumenda perferendis, sint quisquam animi nulla possimus.
-            Debitis eveniet beatae nobis iure, commodi quasi odio excepturi
-            maxime consequuntur laudantium tenetur est libero dolor provident
-            possimus pariatur. Eveniet, possimus! Voluptatem accusantium omnis
-            voluptas autem architecto, ad nisi doloremque ea accusamus aliquam!
-          </p>
+        <div className='section-kicker'>About</div>
+        <div className='about-grid'>
+          <div>
+            <h2 className='about-header'>
+              Developer, problem solver, and product-minded builder.
+            </h2>
+          </div>
+          <div className='about-me'>
+            <p>
+              I create web applications that feel clean on the surface and
+              dependable underneath. My work spans responsive interfaces,
+              API-driven features, databases, deployment, and the details that
+              make a product easier to use.
+            </p>
+            <p>
+              The throughline is simple: understand the user, choose the right
+              tool for the job, and ship an experience that is fast, accessible,
+              and maintainable.
+            </p>
+            <div className='about-cards'>
+              <article>
+                <span>01</span>
+                <h3>Interface craft</h3>
+                <p>Layouts, interactions, and visual systems built for clarity.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>Full-stack thinking</h3>
+                <p>React front ends connected to practical server and data layers.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Launch mindset</h3>
+                <p>Deployment-aware builds with attention to performance and polish.</p>
+              </article>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

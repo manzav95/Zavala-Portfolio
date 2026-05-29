@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
@@ -7,19 +8,55 @@
   vertical-align: baseline;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
-  height: 100%;
-  background-color: #000;
-  /* Temorpary until I finish rest of Homepage */
-  /* overflow: hidden; */
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top left, rgba(41, 121, 255, 0.2), transparent 34rem),
+    linear-gradient(135deg, #050816 0%, #08111f 52%, #02030a 100%);
+  color: var(--text);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+body,
+button,
+input,
+textarea {
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
 }
 
 .body-no-scroll {
   overflow: hidden;
 }
 
+.App {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 :root {
-  --blue: #000e8b;
-  --text: #fefefe;
+  --blue: #35a7ff;
+  --blue-dark: #0b2cff;
+  --cyan: #64ffda;
+  --purple: #9f7aea;
+  --text: #f8fbff;
+  --muted: #9fb0c8;
+  --panel: rgba(10, 18, 32, 0.82);
+  --panel-strong: rgba(14, 25, 45, 0.95);
+  --line: rgba(255, 255, 255, 0.12);
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+::selection {
+  background: rgba(100, 255, 218, 0.32);
+  color: var(--text);
 }

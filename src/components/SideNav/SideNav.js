@@ -17,42 +17,60 @@ const toggleMobileButton = function () {
 
 function SideNav() {
   return (
-    <div>
-      <div className='sidenav-wrapper'>
-        <div className='burger' id='burger' onClick={toggleMobileButton}>
-          <div className='burger-part'></div>
-          <div className='burger-part'></div>
-          <div className='burger-part'></div>
-        </div>
-        <nav className='mobile-menu'>
-          <ul>
-            <li>
-              <a href='/'>Home</a>
-            </li>
-            <li>
-              <a href='#about' onClick={toggleMobileButton}>
-                About
-              </a>
-            </li>
-            <li>
-              <a href='#contact'>Contact</a>
-            </li>
-            <li>
-              <a href='#projects'>Projects</a>
-            </li>
-            <li>
-              <a
-                href={resume}
-                target='_blank'
-                rel='noopener noreferrer'
-                download="Manuel Zavala's Resume"
-              >
-                Resume
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <div className='sidenav-wrapper'>
+      <a className='mobile-brand' href='/#home' aria-label='Manuel Zavala home'>
+        MZ
+      </a>
+      <button
+        className='burger'
+        id='burger'
+        onClick={toggleMobileButton}
+        aria-label='Toggle navigation'
+        type='button'
+      >
+        <span className='burger-part'></span>
+        <span className='burger-part'></span>
+        <span className='burger-part'></span>
+      </button>
+      <nav className='mobile-menu'>
+        <ul>
+          <li>
+            <a href='/#home' onClick={toggleMobileButton}>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href='#about' onClick={toggleMobileButton}>
+              About
+            </a>
+          </li>
+          <li>
+            <a href='#skills' onClick={toggleMobileButton}>
+              Skills
+            </a>
+          </li>
+          <li>
+            <a href='#projects' onClick={toggleMobileButton}>
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href='#contact' onClick={toggleMobileButton}>
+              Contact
+            </a>
+          </li>
+          <li>
+            <a
+              href={resume}
+              target='_blank'
+              rel='noopener noreferrer'
+              download="Manuel Zavala's Resume"
+            >
+              Resume
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }

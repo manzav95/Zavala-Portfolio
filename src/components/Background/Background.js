@@ -5,13 +5,13 @@ import './style.css';
 
 function Background() {
   return (
-    <div className='App'>
+    <div className='background-layer' aria-hidden='true'>
       <Particles
         id='particles'
         options={{
           background: {
             color: {
-              value: '#000',
+              value: 'transparent',
             },
             size: 'cover',
             repeat: 'no-repeat',
@@ -55,20 +55,13 @@ function Background() {
           },
           particles: {
             color: {
-              animation: {
-                //Color changing animation
-                enable: true,
-                speed: 10,
-                //Sync all atoms same color
-                sync: false,
-              },
-              value: '#ff0000',
+              value: ['#35a7ff', '#64ffda', '#9f7aea'],
             },
             links: {
               enable: true,
-              color: '#ffffff',
+              color: '#64ffda',
               distance: 150,
-              opacity: 0.5,
+              opacity: 0.28,
               width: 1,
             },
             collisions: {
@@ -87,17 +80,17 @@ function Background() {
                 enable: true,
                 value_area: 900,
               },
-              value: 140,
+              value: 80,
             },
             opacity: {
-              value: 0.4,
+              value: 0.32,
             },
             shape: {
               type: 'circle',
             },
             size: {
               random: true,
-              value: 4,
+              value: 3,
             },
           },
           detectRetina: false,

@@ -3,39 +3,49 @@ import './style.css';
 import Tilt from 'react-tilt';
 
 function ProjectCard(props) {
+  const tags = props.tags || [];
+
   return (
-    <div className='main-card' id='container'>
+    <article className='main-card'>
       <Tilt
         className='card-wrapper'
-        options={{ max: 25, reverse: true, scale: 1.05, speed: 1250 }}
+        options={{ max: 10, reverse: true, scale: 1.02, speed: 1250 }}
       >
-        <h2 className='card-title'>{props.title}</h2>
-        <img className='project-image' src={props.image} alt='' />
-        <a
-          className='view-code'
-          href={props.code}
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          View Code
-        </a>
-        <a
-          className='live-site'
-          href={props.live}
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Live Site
-        </a>
+        <div className='project-image-wrap'>
+          <img className='project-image' src={props.image} alt={props.title} />
+        </div>
         <div className='project-info'>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-            quibusdam dolorum voluptatem animi sequi maxime, minima mollitia
-            iste tempora obcaecati incidunt alias, inventore dicta. Natus.
-          </p>
+          <p className='project-type'>{props.type}</p>
+          <h3 className='card-title'>{props.title}</h3>
+          <p className='project-description'>{props.description}</p>
+          <ul className='project-tags'>
+            {tags.map((tag) => (
+              <li key={tag}>{tag}</li>
+            ))}
+          </ul>
+          <div className='project-links'>
+            {props.live && (
+              <a
+                className='live-site'
+                href={props.live}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Live Site
+              </a>
+            )}
+            <a
+              className='view-code'
+              href={props.code}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              View Code
+            </a>
+          </div>
         </div>
       </Tilt>
-    </div>
+    </article>
   );
 }
 
