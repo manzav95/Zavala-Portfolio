@@ -22,6 +22,14 @@ function Projects() {
         </div>
         <div className='project-container'>
           <ProjectCard
+            featured
+            title='Paint Inventory App'
+            type='Main work project'
+            description='An internal inventory management app for tracking paint stock, colors, product movement, and job-ready availability with a cleaner workflow for day-to-day operations.'
+            tags={['React', 'Inventory UX', 'Operations Tool', 'Private App']}
+            note='Private work project'
+          />
+          <ProjectCard
             title='Primavera Taxx'
             type='Client website'
             live='https://primavera-taxx.netlify.app/'

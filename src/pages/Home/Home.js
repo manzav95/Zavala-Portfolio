@@ -37,7 +37,7 @@ function Home() {
           </div>
           <div className='hero-stats' aria-label='Portfolio highlights'>
             <div>
-              <strong>04</strong>
+              <strong>05</strong>
               <span>featured builds</span>
             </div>
             <div>
