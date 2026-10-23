@@ -4,6 +4,7 @@ import primavera from '../../images/primaverataxx.png';
 import deadline from '../../images/deadline.png';
 import fridgetotable from '../../images/fridgetotable.png';
 import crystalgame from '../../images/crystalgame.png';
+import paintInventory from '../../images/paint-inventory-app.png';
 
 import './style.css';
 
@@ -25,9 +26,11 @@ function Projects() {
             featured
             title='Paint Inventory App'
             type='Main work project'
+            live='https://pct-paint-inventory.netlify.app/'
+            image={paintInventory}
             description='An internal inventory management app for tracking paint stock, colors, product movement, and job-ready availability with a cleaner workflow for day-to-day operations.'
-            tags={['React', 'Inventory UX', 'Operations Tool', 'Private App']}
-            note='Private work project'
+            tags={['React', 'Inventory UX', 'Operations Tool', 'Netlify']}
+            note='Authenticated demo'
           />
           <ProjectCard
             title='Primavera Taxx'
