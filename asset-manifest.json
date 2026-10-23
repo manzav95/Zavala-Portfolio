@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.ec9842a8.chunk.css",
-    "main.js": "./static/js/main.18381177.chunk.js",
-    "main.js.map": "./static/js/main.18381177.chunk.js.map",
+    "main.css": "./static/css/main.bd98f983.chunk.css",
+    "main.js": "./static/js/main.0905338b.chunk.js",
+    "main.js.map": "./static/js/main.0905338b.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.0fdaa1ec.js",
     "runtime-main.js.map": "./static/js/runtime-main.0fdaa1ec.js.map",
     "static/js/2.35fd2187.chunk.js": "./static/js/2.35fd2187.chunk.js",
     "static/js/2.35fd2187.chunk.js.map": "./static/js/2.35fd2187.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.84806d386986ca8707d5e00aae42597c.js": "./precache-manifest.84806d386986ca8707d5e00aae42597c.js",
+    "precache-manifest.a4825adcfa207295f51819323ecea877.js": "./precache-manifest.a4825adcfa207295f51819323ecea877.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.ec9842a8.chunk.css.map": "./static/css/main.ec9842a8.chunk.css.map",
+    "static/css/main.bd98f983.chunk.css.map": "./static/css/main.bd98f983.chunk.css.map",
     "static/js/2.35fd2187.chunk.js.LICENSE.txt": "./static/js/2.35fd2187.chunk.js.LICENSE.txt",
     "static/media/crystalgame.png": "./static/media/crystalgame.ae579987.png",
     "static/media/deadline.png": "./static/media/deadline.514f7914.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.0fdaa1ec.js",
     "static/js/2.35fd2187.chunk.js",
-    "static/css/main.ec9842a8.chunk.css",
-    "static/js/main.18381177.chunk.js"
+    "static/css/main.bd98f983.chunk.css",
+    "static/js/main.0905338b.chunk.js"
   ]
 }
